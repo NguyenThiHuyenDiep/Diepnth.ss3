@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://api.gateway.com" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">Họ và tên:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Ngày sinh:</label></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label>Giới tính:</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Nam
+                    <input type="radio" name="gender" value="female"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td><label for="number">Số căn cước công dân:</label></td>
+                <td><input type="number" name="number" id="number"></td>
+            </tr>
+            <tr>
+                <td><label for="date">Ngày cấp:</label></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="place">Nơi cấp:</label></td>
+                <td><input type="text" name="place" id="place"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Số điện thoại:</label></td>
+                <td><input type="number" name="phone" id="phone" maxlength="5" ></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td><label for="dctt">Địa chỉ thường trú:</label></td>
+                <td><textarea name="dctt" id="dctt" rows="3" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="dc">Địa chỉ tạm trú:</label></td>
+                <td><textarea name="dc" id="dc" rows="3" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="cccd">Loại căn cước công dân:</label></td>
+                <td>
+                    <input type="radio" name="type" value="new"> Căn cước công dân mới
+                    <input type="radio" name="type" value="old"> Căn cước công dân cũ
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ethnic">Dân tộc:</label></td>
+                <td><input type="text" name="ethnic" id="ethnic"></td>
+            </tr>
+            <tr>
+                <td><label for="religion">Tôn giáo:</label></td>
+                <td><input type="text" name="religion" id="religion"></td>
+            </tr>
+            <tr>
+                <td><label for="nation">Quốc tịch:</label></td>
+                <td><input type="text" name="nation" id="nation" value="Việt Nam"></td>
+            </tr>
+            <tr>
+                <td><label for="parentname">Họ tên cha/mẹ:</label></td>
+                <td><input type="text" name="parentname" id="parentname"></td>
+            </tr>
+            <tr>
+                <td><label for="numberparent">Số CMND/CCCD của cha/mẹ:</label></td>
+                <td><input type="number" name="numberparent" id="numberparent"></td>
+            </tr>
+            <tr>
+                <select>
+                <td><label>Tỉnh/Thành phố:</label></td>
+                <td> 
+                    
+                    <select name="class" id="class">
+                        <option value="" disabled selected hidden>Chọn Tỉnh/Thành phố</option>
+                        <option value="HN">Hà Nội</option>
+                        <option value="HCM">Hồ chí Minh</option>
+                        <option value="HP">Hải Phòng</option>
+                    </select>
+                </td> 
+            </tr>
+            
+        </table>
+        <button type="submit">Gửi thông tin</button>
+    </form>
+</body>
+</html>
